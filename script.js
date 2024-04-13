@@ -1,9 +1,8 @@
 const accordion = document.getElementsByClassName("accordion");
 let i;
 
-function toggleAccordion(header) {
-  header.classList.toggle('active');
-  var icon = header.querySelector('.accordion-icon');
-  icon.textContent = icon.textContent === '+' ? '-' : '+';
+for(i = 0; i < accordion.length; i++){
+    accordion[i].addEventListener("click", function(){
+        this.classList.toggle("active");
+    });
 }
-/*I'm so sorry Stephen I can't get this accordion to work :,(*/

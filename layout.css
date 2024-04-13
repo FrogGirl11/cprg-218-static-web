@@ -140,15 +140,27 @@ body{
     }
 }
 
-.video-container{
+.video-wrapper{
     min-height: 60vh;
     margin-top: 5rem;
  }
+
+ .video-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+ }
  
 
- .video-container h1{
+ .video-wrapper h1{
      font-size: clamp(2rem, 5vw, 5vw);
      text-align: center;
+     
  }
 
  .video-yt{
